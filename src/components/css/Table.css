@@ -1,0 +1,25 @@
+table {
+  overflow-x: auto;
+}
+
+.posistion-colums {
+  position: sticky;
+  top: -6px;
+  left: 0;
+}
+
+.posistion-colums {
+  background: rgb(33 33 33);
+  color: white;
+}
+
+.actions-table {
+  display: flex;
+  justify-content: center;
+}
+
+.actions-table span svg {
+  height: 25px;
+  margin-right: 10px;
+  cursor: pointer;
+}

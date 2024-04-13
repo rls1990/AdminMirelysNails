@@ -1,0 +1,81 @@
+.span-avatar {
+  position: relative;
+  display: inline-flex;
+  vertical-align: middle;
+  flex-shrink: 0;
+  padding: 11px;
+  cursor: pointer;
+}
+
+.connect-signal {
+  background-color: rgb(67, 183, 0);
+  color: rgb(68, 183, 0);
+  box-shadow: rgb(255, 255, 255) 0px 0px 1px 2px;
+  position: absolute;
+  display: flex;
+  flex-flow: row wrap;
+  -webkit-box-pack: center;
+  place-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  box-sizing: border-box;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 0.75rem;
+  width: 8px;
+  height: 8px;
+  padding: 6px;
+  border-radius: 10px;
+  z-index: 1;
+  right: 10px;
+  bottom: 12px;
+  transform: scale(1) translate(17%, 26%);
+  transform-origin: 100% 0%;
+}
+
+.content-image {
+  display: flex;
+  place-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: rgb(255, 255, 255) 0px 0px 1px 2px;
+}
+
+.pulse-ripple {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.pulse-ripple::before {
+  content: "";
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  border: 2px solid rgb(255, 255, 255);
+  animation: pulse-ripple 1s infinite;
+}
+
+@keyframes pulse-ripple {
+  0% {
+    opacity: 1;
+    transform: scale3d(0.75, 0.75, 1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale3d(1.2, 1.2, 1);
+  }
+}
+
+.avatar-img {
+  height: 100%;
+  width: 100%;
+}

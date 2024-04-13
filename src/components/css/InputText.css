@@ -1,0 +1,47 @@
+.input-field label {
+  color: #000;
+}
+
+input[type="text"]:not(.browser-default):focus:not([readonly]) + label {
+  color: #000;
+}
+
+input[type="text"]:not(.browser-default):focus.valid ~ label {
+  color: rgb(14, 94, 14);
+}
+
+input[type="text"]:not(.browser-default):focus.invalid ~ label,
+input[type="text"]:not(.browser-default).invalid ~ .helper-text:after,
+input[type="text"]:not(.browser-default):focus.invalid ~ .helper-text:after {
+  color: #b71c1c;
+}
+
+input[type="text"]:not(.browser-default).valid ~ .helper-text:after,
+input[type="text"]:not(.browser-default):focus.valid ~ .helper-text:after {
+  content: attr(data-success);
+  color: rgb(12, 78, 12);
+}
+
+input[type="text"]:not(.browser-default) {
+  border-bottom: 1px solid #464646;
+}
+
+input[type="text"]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid #4d4c4c;
+  -webkit-box-shadow: 0 1px 0 0 #4d4c4c;
+  box-shadow: 0 1px 0 0 #4d4c4c;
+}
+
+input.valid[type="text"]:not(.browser-default),
+input.valid[type="text"]:not(.browser-default):focus {
+  border-bottom: 1px solid #38813b;
+  -webkit-box-shadow: 0 1px 0 0 #38813b;
+  box-shadow: 0 1px 0 0 #38813b;
+}
+
+input.invalid[type="text"]:not(.browser-default),
+input.invalid[type="text"]:not(.browser-default):focus {
+  border-bottom: 1px solid #f44336;
+  -webkit-box-shadow: 0 1px 0 0 #f44336;
+  box-shadow: 0 1px 0 0 #f44336;
+}

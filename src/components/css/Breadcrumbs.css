@@ -1,0 +1,27 @@
+.breadcrumbs-fix {
+  position: fixed;
+  top: 82px;
+  left: 30px;
+  right: 30px;
+  padding: 13px;
+  background-color: rgb(248, 248, 248);
+  color: rgb(131, 131, 131);
+  font-size: 15px;
+  display: flex;
+  justify-content: left;
+}
+
+.breadcrumbs-fix div {
+  display: flex;
+}
+
+.breadcrumbs-fix div span {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .breadcrumbs-fix {
+    left: 7px;
+    right: 7px;
+  }
+}

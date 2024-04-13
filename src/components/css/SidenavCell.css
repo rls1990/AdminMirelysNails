@@ -1,0 +1,109 @@
+.menu-icon-sidenavcell {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 200px;
+}
+
+.menu-icon-sidenavcell svg {
+  height: 35px;
+  width: 35px;
+  margin-top: 13px;
+  cursor: pointer;
+  color: white;
+}
+
+/* #slide-out .user-view{
+  
+} */
+
+#slide-out .user-view .background {
+  height: 190px;
+}
+
+#slide-out .user-view .background img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.menu-close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: flex;
+  height: 40px;
+  width: 57px;
+  z-index: 1;
+  /* background-color: rgba(243, 243, 243, 0.3);
+  backdrop-filter: blur(7px); */
+}
+
+.menu-close:hover {
+  background-color: transparent;
+}
+
+.menu-close svg {
+  height: 35px;
+  width: 35px;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  margin-top: 2px;
+  margin-left: 14px;
+  filter: drop-shadow(2px 2px 6px rgb(0, 0, 0));
+}
+
+.presentation-menu {
+  position: absolute;
+  top: 0;
+  bottom: 1px;
+  left: 0;
+  height: 190px;
+  width: 100%;
+  background-color: rgba(153, 153, 153, 0.178);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-top: 50px;
+}
+
+.title-menu {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding: 0;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+
+.items-menu {
+  margin-top: 190px;
+  height: 435px;
+  overflow-y: auto;
+}
+
+.items-menu ul li {
+  width: 100%;
+}
+
+.items-menu ul li:hover {
+  background-color: rgba(153, 153, 153, 0.178);
+}
+
+.items-menu ul li span {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 60px;
+}
+
+.items-menu ul li span svg {
+  width: 27px;
+  height: 27px;
+  margin-right: 3px;
+}
+.items-menu ul li span .galrot {
+  transform: rotateZ(90deg);
+}

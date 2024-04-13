@@ -1,0 +1,261 @@
+.sidenav-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 100%;
+  z-index: 1000;
+}
+
+.sidenav-menu {
+  height: 64px;
+  width: 100%;
+}
+
+.bars-menu {
+  height: 35px;
+  width: 35px;
+  margin-top: 13px;
+  cursor: pointer;
+  color: white;
+}
+
+.sidenav-content {
+  background-color: #fff;
+  height: 85%;
+  overflow-y: auto;
+  width: 40%;
+  color: rgba(20, 20, 20, 0.897);
+  margin-top: 15px;
+  margin-left: 15px;
+  transition: width 0.2s linear;
+  border-radius: 12px;
+}
+
+.sidenav-content-action {
+  width: 100%;
+}
+
+.logo {
+  background: #ffffff;
+  padding: 4px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.text-logo {
+  margin-top: 7px;
+  margin-bottom: 7px;
+  font: bold 20px arial, sans-serit;
+  background-color: #3a2b2b;
+  color: transparent;
+  text-shadow: 1px 1px 2px #ffffffb9;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+}
+
+.logo-img {
+  width: 70px;
+  margin-top: 3px;
+  filter: drop-shadow(2px 2px 4px #b9b8b8);
+  transition: width 0.2s linear;
+}
+
+.logo-img-action {
+  width: 170px;
+}
+
+.fadeInMSN {
+  animation-name: fadeInMSN;
+  animation-delay: 0.1s;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInMSN {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.fadeInText {
+  animation-name: fadeInText;
+  animation-delay: 0.25s;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInText {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeInMenuItemsMax {
+  animation-name: fadeInMenuItemsMax;
+  animation-delay: 0.7s;
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInMenuItemsMax {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeInMenuItemsMin {
+  animation-name: fadeInMenuItemsMin;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInMenuItemsMin {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.delay {
+  animation-delay: 0.2s;
+  animation-duration: 0.1s;
+}
+.delay1 {
+  animation-delay: 0.2s;
+  animation-duration: 0.3s;
+}
+.delay2 {
+  animation-delay: 0.2s;
+  animation-duration: 0.5s;
+}
+
+.div-MenuItemsMin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.svg-MenuItemsMin {
+  width: 28px;
+  margin-top: 10px;
+  color: #616161;
+  filter: drop-shadow(0px 0px 1px grey);
+  transition: all 0.2s linear;
+}
+
+.svg-MenuItemsMinSubMenu {
+  width: 24px;
+  color: #616161;
+  margin-right: 3px;
+}
+
+.svg-MenuItemsMin:hover,
+.svg-MenuItemsMin.active {
+  color: rgb(33 33 33);
+  filter: drop-shadow(2px 2px 2px grey);
+  transform: translateX(-2px) translateY(-2px) scale(1.2);
+  cursor: pointer;
+}
+
+.sidenav-menuitems-min .dropdown-content {
+  background-color: transparent;
+  box-shadow: none;
+  overflow-y: visible;
+}
+
+.menuitems-min {
+  background-color: #fff;
+  box-shadow: 2px 2px 7px 2px rgb(177, 177, 177);
+  position: absolute;
+  left: 62px;
+  top: -40px;
+}
+
+.menuitems-min ul {
+  margin: 0;
+}
+
+.menuitems-min li a {
+  color: rgb(177, 177, 177);
+}
+
+.menuitems-min li span {
+  color: #616161;
+  display: flex;
+  align-items: center;
+}
+
+.menuitems-min li a:hover,
+.menuitems-min li:hover {
+  background-color: #e4e3e3;
+}
+
+.menuItemsMax {
+  margin: 5px;
+}
+
+.svg-MenuItemsMax {
+  width: 24px;
+  color: #616161;
+  filter: drop-shadow(0px 0px 1px grey);
+}
+
+.menuItemsMax .collapsible {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  box-shadow: none;
+}
+
+.menuItemsMax ul li .collapsible-body {
+  padding: 1px;
+}
+
+.menuItemsMax ul li .collapsible-body ul li span {
+  padding: 10px;
+  padding-left: 35px;
+}
+
+.menuItemsMax .collapsible .collapsible-header,
+.menuItemsMax .collapsible .collapsible-body {
+  border-bottom: none;
+}
+
+.menuItemsMax .collapsible .collapsible-header {
+  padding: 10px;
+  display: flex;
+}
+
+.menuItemsMax ul li span {
+  display: flex;
+  padding: 10px;
+}
+
+.menuItemsMax ul li span:hover {
+  background-color: #e4e3e3;
+}
+
+.menuItemsMax ul li span svg {
+  margin-left: 10px;
+  margin-right: 10px;
+}

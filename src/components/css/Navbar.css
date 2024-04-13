@@ -1,0 +1,32 @@
+nav .elements-navbar > li {
+  margin: 0px 3px;
+}
+
+nav .elements-navbar {
+  margin-right: 40px;
+}
+
+#dropdown-avatar-content {
+  position: relative;
+  top: -3px;
+  left: 0;
+}
+
+#dropdown-avatar-content li a {
+  color: white;
+}
+
+#dropdown-avatar-content li:hover {
+  background-color: rgb(78, 74, 74);
+}
+
+.dropdown-content li > .icon-avatar-submenu {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.icon-avatar-submenu svg {
+  height: 24px;
+  margin-right: 3px;
+}

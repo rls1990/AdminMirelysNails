@@ -1,0 +1,81 @@
+.div-general-container {
+  position: fixed;
+  top: 150px;
+  left: 30px;
+  right: 30px;
+  bottom: 10px;
+  /*padding: 40px;*/
+  padding-bottom: 40px;
+  overflow-y: auto;
+}
+
+.div-container-actions {
+  position: fixed;
+  top: 150px;
+  left: 30px;
+  right: 30px;
+  background: white;
+  padding: 40px;
+  padding-top: 5px;
+}
+
+.div-container-table {
+  position: fixed;
+  top: 250px;
+  left: 30px;
+  right: 30px;
+  bottom: 10px;
+  background: white;
+  padding-top: 5px;
+  overflow-y: auto;
+}
+
+@media only screen and (max-width: 700px) {
+  .div-general-container,
+  .div-container-actions,
+  .div-container-table {
+    left: 7px;
+    right: 7px;
+  }
+}
+
+.title-vista-servicios {
+  font-size: 20px;
+  font-weight: 500;
+  float: left;
+  margin-top: 12px;
+}
+
+.div-title-nuevo-servicio {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: #ffffff;
+  z-index: 3;
+}
+.title-vista-nuevo-servicio {
+  font-size: 20px;
+  font-weight: 500;
+  float: left;
+  margin-top: 12px;
+  padding-left: 40px;
+  margin-bottom: 10px;
+}
+
+.btn-add-action {
+  float: right;
+  margin-top: 40px;
+}
+
+.form-addS {
+  margin-top: 10px;
+  width: 750px;
+}
+
+.content-formS {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

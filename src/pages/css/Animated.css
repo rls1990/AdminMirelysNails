@@ -1,0 +1,66 @@
+.fadeIn {
+  animation-name: fadeIn;
+  animation-delay: 0.2s;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeInScale098 {
+  animation-name: fadeInScale098;
+  animation-delay: 0.2s;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInScale098 {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.8;
+    transform: perspective(400px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.swing {
+  animation-name: swing;
+  animation-delay: 0.2s;
+  animation-duration: 0.7s;
+  transform-origin: top center;
+  animation-fill-mode: both;
+  animation-iteration-count: 10;
+}
+
+@keyframes swing {
+  20% {
+    transform: rotate(15deg);
+  }
+
+  40% {
+    transform: rotate(-10deg);
+  }
+
+  60% {
+    transform: rotate(5deg);
+  }
+
+  80% {
+    transform: rotate(-5deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}

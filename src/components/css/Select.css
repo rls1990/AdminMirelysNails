@@ -1,0 +1,4 @@
+.dropdown-content li > a,
+.dropdown-content li > span {
+  color: #2c3635;
+}

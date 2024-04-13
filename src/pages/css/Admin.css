@@ -1,0 +1,9 @@
+.admin-s {
+  width: 100vw;
+  /* height: 100vh; */
+  overflow: auto;
+}
+
+.vistas {
+  margin-top: 90px;
+}
